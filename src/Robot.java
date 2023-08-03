@@ -1,6 +1,6 @@
 class Robot{
-    int x, y;
-    int direction;
+    private int x, y;
+    private int direction;
 
     public Robot(){
         x=0; y=0; direction = 0;
@@ -28,6 +28,11 @@ class Robot{
         direction += 90;
         if( direction >=360)
             direction -= 360;
+    }
+
+    public String toString()
+    {
+        return "робот в точке "+x+"; "+y+" смотрит в направлении "+direction+" градусов";
     }
 
 }
